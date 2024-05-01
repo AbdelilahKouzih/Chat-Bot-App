@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
 import SidebarLinkGroup from './SidebarLinkGroup';
-import Logo from '../../images/logo/logo.svg';
+import Logo from '../../images/logo/logo-bot.png';
 
 interface SidebarProps {
   sidebarOpen: boolean;
@@ -64,9 +64,9 @@ const Sidebar = ({ sidebarOpen, setSidebarOpen }: SidebarProps) => {
     >
       {/* <!-- SIDEBAR HEADER --> */}
       <div className="flex items-center justify-between gap-2 px-6 py-5.5 lg:py-6.5">
-        <NavLink to="/">
-          <img src={Logo} alt="Logo" />
-        </NavLink>
+      <NavLink to="/" className="flex items-center justify-center">
+      <img src={Logo} alt="Logo" className="w-50 h-auto  transition-transform duration-300 transform hover:scale-110" />
+    </NavLink>
 
         <button
           ref={trigger}

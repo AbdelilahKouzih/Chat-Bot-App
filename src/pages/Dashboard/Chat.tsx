@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
-import {  BsPersonCircle, BsFileEarmarkArrowUp, BsPlayFill } from 'react-icons/bs';
+import {  BsFileEarmarkArrowUp, BsPlayFill } from 'react-icons/bs';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import userSix from '../../images/user/Graident-Ai-Robot.png';
-import { GiVintageRobot } from "react-icons/gi";
-import { GoogleGenerativeAIEmbeddings } from '@langchain/google-genai';
+import userSix from '../../images/user/Graident-Ai-Robot-1.png';
 import Markdown from 'react-markdown';
 import remarkGfm from 'remark-gfm'; // Plugin pour gérer les liens
 import DefaultLayout from '../../layout/DefaultLayout';
 
 const ECommerce: React.FC = () => {
+
     const [userInput, setUserInput] = useState('');
     const [chatHistory, setChatHistory] = useState([]);
 
