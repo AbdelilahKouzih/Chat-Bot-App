@@ -14,7 +14,7 @@ const ECommerce: React.FC = () => {
     const apiKey = 'AIzaSyDGhKHN__SdqQsHC7xWY-APWxOcVkuG-N4'; // Remplacez par votre clé API réelle
     const genAI = new GoogleGenerativeAI(apiKey);
 
-    const handleInputChange = (event) => {
+    const handleInputChange = (event: { target: { value: React.SetStateAction<string>; }; }) => {
         setUserInput(event.target.value);
     };
 
@@ -67,8 +67,8 @@ const ECommerce: React.FC = () => {
                     <div className="bg-gray-100 p-6 rounded-lg shadow text-center">
                    
                 <div className="mb-4 flex flex-col items-center justify-center">
-                <img src={userSix}  className=' rounded-full w-40 h-40' />
-                <h4 className="text-xl font-bold text-gray-800">Bot Assistant</h4>
+                <img src={userSix}  className=' rounded-full  w-40 h-40' />
+                <h4 className="text-2xl font-bold text-gray-800 mb-4">Comment puis-je vous aider ?</h4>
                 </div>
                         <div>
                             {chatHistory.map((message, index) => (

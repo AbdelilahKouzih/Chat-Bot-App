@@ -1,18 +1,6 @@
 import Breadcrumb from '../../components/Breadcrumbs/Breadcrumb';
-import CheckboxFive from '../../components/Checkboxes/CheckboxFive';
-import CheckboxFour from '../../components/Checkboxes/CheckboxFour';
-import CheckboxOne from '../../components/Checkboxes/CheckboxOne';
-import CheckboxThree from '../../components/Checkboxes/CheckboxThree';
-import CheckboxTwo from '../../components/Checkboxes/CheckboxTwo';
-import SwitcherFour from '../../components/Switchers/SwitcherFour';
-import SwitcherOne from '../../components/Switchers/SwitcherOne';
-import SwitcherThree from '../../components/Switchers/SwitcherThree';
-import SwitcherTwo from '../../components/Switchers/SwitcherTwo';
 import DefaultLayout from '../../layout/DefaultLayout';
-import DatePickerOne from '../../components/Forms/DatePicker/DatePickerOne';
-import DatePickerTwo from '../../components/Forms/DatePicker/DatePickerTwo';
-import SelectGroupTwo from '../../components/Forms/SelectGroup/SelectGroupTwo';
-import MultiSelect from '../../components/Forms/MultiSelect';
+
 
 const FormElements = () => {
   return (
@@ -72,12 +60,6 @@ const FormElements = () => {
                 Toggle switch input
               </h3>
             </div>
-            <div className="flex flex-col gap-5.5 p-6.5">
-              <SwitcherOne />
-              <SwitcherTwo />
-              <SwitcherThree />
-              <SwitcherFour />
-            </div>
           </div>
 
           {/* <!-- Time and date --> */}
@@ -87,10 +69,7 @@ const FormElements = () => {
                 Time and date
               </h3>
             </div>
-            <div className="flex flex-col gap-5.5 p-6.5">
-              <DatePickerOne />
-              <DatePickerTwo />
-            </div>
+           
           </div>
 
           {/* <!-- File upload --> */}
@@ -176,13 +155,7 @@ const FormElements = () => {
                 Checkbox and radio
               </h3>
             </div>
-            <div className="flex flex-col gap-5.5 p-6.5">
-              <CheckboxOne />
-              <CheckboxTwo />
-              <CheckboxThree />
-              <CheckboxFour />
-              <CheckboxFive />
-            </div>
+           
           </div>
 
           {/* <!-- Select input --> */}
@@ -191,10 +164,6 @@ const FormElements = () => {
               <h3 className="font-medium text-black dark:text-white">
                 Select input
               </h3>
-            </div>
-            <div className="flex flex-col gap-5.5 p-6.5">
-              <SelectGroupTwo />
-              <MultiSelect id="multiSelect" />
             </div>
           </div>
         </div>
